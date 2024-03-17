@@ -3,10 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:tractorCompany.View"
+             xmlns:vm="clr-namespace:tractorCompany.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Style="{StaticResource Page_Style}">
+    
     <Grid>
-            
+
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Style="{StaticResource Text_Style}" 
+                   Text="ВЫБОР КАТЕГОРИИ" Grid.ColumnSpan="3" 
+                   HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Button Margin="35" Grid.Column="0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Tractor.jpg" 
+                            Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
+        <Button Margin="35" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Special.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
+        <Button Margin="35" Grid.Column="2">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Addition.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
+    
 </UserControl>
