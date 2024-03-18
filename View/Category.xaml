@@ -23,6 +23,12 @@
                    HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
         <Button Margin="35" Grid.Column="0">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                            Value="10"/>
+                </Style>
+            </Button.Resources>
             <Button.Background>
                 <ImageBrush ImageSource="/Images/Tractor.jpg" 
                             Stretch="UniformToFill"/>
@@ -30,12 +36,24 @@
         </Button>
 
         <Button Margin="35" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                Value="10"/>
+                </Style>
+            </Button.Resources>
             <Button.Background>
                 <ImageBrush ImageSource="/Images/Special.jpg" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
 
         <Button Margin="35" Grid.Column="2">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                Value="10"/>
+                </Style>
+            </Button.Resources>
             <Button.Background>
                 <ImageBrush ImageSource="/Images/Addition.jpg" Stretch="UniformToFill"/>
             </Button.Background>

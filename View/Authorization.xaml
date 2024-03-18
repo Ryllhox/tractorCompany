@@ -5,8 +5,49 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:tractorCompany.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             Style="{StaticResource Page_Style}">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Выбор пользователя"
+                   Grid.Row="0" Grid.ColumnSpan="2" 
+                   Style="{StaticResource Text_Style}"
+                   HorizontalAlignment="Center"/>
+
+        <Button Margin="35" Grid.Row="1" Grid.Column="0">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                    Value="10"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Manager.jpg" 
+                    Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
+        <Button Margin="35" Grid.Row="1" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+            Value="10"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Client.jpg" 
+            Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </UserControl>
